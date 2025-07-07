@@ -60,6 +60,20 @@ body{
     display: flex;
     gap: 32px;
 }
+@media (max-width: 510px) {
+    .header-continer{
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    justify-content: space-between;
+}
+.header-link{
+    flex-direction: column;
+}
+    .navbar-vap{
+        display: none;
+    }
+}
 
 
 
@@ -67,10 +81,12 @@ body{
     position: relative;
     background-color: #252420;
     color: white;
-    padding-top: 100px;
+    padding-top: 13gt0px;
     padding-bottom: 80px;
     
 }
+
+
 
 .hero-shere{
     position:relative ;
@@ -111,6 +127,19 @@ body{
 .hero-text{
    margin-bottom: 32px;
 }
+
+@media (max-width: 510px) {
+
+    .hero-continer{
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    
+}
+
 /* why  */
 .why{
 padding-top: 236px;
@@ -155,6 +184,24 @@ margin-bottom: 32px ;
     font-family: "Roboto Condensed"; 
     
 }
+
+    @media (max-width: 510px) {
+        .why {
+         flex-direction: column;
+         gap: 20px;
+          text-align: center;
+        }
+        .card{
+            text-align: center;
+        }
+
+      }
+      
+
+
+
+
+/* CTA */
 .cta {
     
     background-color: #252420;
@@ -196,6 +243,27 @@ margin-bottom: 32px ;
     color: #FF7500;
 
 }
+@media (max-width: 510px) {
+    .cta-continer {
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+    }
+  
+    .cta-book {
+      top: 0;
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .cta-content {
+      align-items: center;
+    }
+}
+
+
+/* Footer */
 
 .footer{
     padding-bottom: 56px;
@@ -234,32 +302,20 @@ margin-bottom: 32px ;
     color: #252420;
 }
 
-@media (max-width: 480px) {
-
-    .hero-title {
-        font-size: 28px;
+@media (max-width: 510px) {
+    .footer-top{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
-    .title {
-        font-size: 36px;
+    .footer-bottom{
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+
     }
 
-    .cta-title {
-        font-size: 28px;
-    }
 
-    .orenge-button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .circle {
-        width: 80px;
-        height: 80px;
-    }
-
-    .continer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+    
 }
